@@ -5,7 +5,7 @@ import ProblemList from './components/ProblemList';
 
 export default function App() {
     return (
-        <div className="container-secondary" style={{backgroundColor : "#222831"}}>
+        <div style={{backgroundColor : "#222831"}}>
             <NavBar/>
             <ProblemList />
         </div>

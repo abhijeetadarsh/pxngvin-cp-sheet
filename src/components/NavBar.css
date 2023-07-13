@@ -1,0 +1,13 @@
+input,
+button {
+    border: none;
+    /* background-color: brown; */
+}
+
+/* .btn-secondary {
+    border: none;
+} */
+
+/* input::-moz-focus-inner, input::-moz-focus-outer {
+    border: none;
+} */

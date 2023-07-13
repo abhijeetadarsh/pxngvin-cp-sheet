@@ -1,0 +1,24 @@
+details>summary {
+    list-style: none;
+    font-weight: 400;
+    font-size: larger;
+    padding: 2vh 4vw;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #393E46;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.list-group-item {
+    background-color: #EEEEEE;
+    padding: 1vh 4vw;
+}
