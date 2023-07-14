@@ -24,8 +24,8 @@ export default function ProblemStatus(props) {
     
     return (
         <div>
-            {problemStatus === 1 && <img className='status-image' src={imgDone} />}
-            {problemStatus === 2 && <img className='status-image' src={imgAttempted} />}
+            {problemStatus === 1 && <img className='status-image' src={imgDone} alt='v'/>}
+            {problemStatus === 2 && <img className='status-image' src={imgAttempted} alt='x'/>}
         </div>
     );
 }
