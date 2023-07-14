@@ -22,3 +22,17 @@ a:hover {
     background-color: #EEEEEE;
     padding: 1vh 4vw;
 }
+
+/* .list-group-item {
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-end; */
+    /* width: 200px; */
+/* }
+.list-group-item>span {
+    justify-self: right;
+}
+
+span {
+    justify-self: right;
+} */

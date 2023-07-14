@@ -1,8 +1,8 @@
-input,
+/* input,
 button {
     border: none;
-    /* background-color: brown; */
-}
+    background-color: brown;
+} */
 
 /* .btn-secondary {
     border: none;
@@ -11,3 +11,8 @@ button {
 /* input::-moz-focus-inner, input::-moz-focus-outer {
     border: none;
 } */
+
+#dog {
+    /* width:1vw; */
+    height: 100px;
+}

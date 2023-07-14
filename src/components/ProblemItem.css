@@ -1,0 +1,15 @@
+#problem-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+#problem-item__details {
+    display: flex;
+    justify-content: space-between;
+    width: 72vw;
+}
+
+.status-image {
+    width: 1rem;
+    height: 1rem;
+}
