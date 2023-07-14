@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import imgAttempted from '../images/thinking.png';
 import imgDone from '../images/verified.png';
 
@@ -11,16 +10,17 @@ import imgDone from '../images/verified.png';
 // let solvedProblems = [];
 export default function ProblemStatus(props) {
     // 0 = unsolved , 1 = solved , 2 = attempted but not solved
-    const [problemStatus, setProblemStatus] = useState(0);
-    const [solvedProblems, setSolvedProblems] = useState([]);
+    // const [problemStatus, setProblemStatus] = useState(0);
+    let problemStatus = 0;
+    // const [solvedProblems, setSolvedProblems] = useState([]);
 
 
-    for (const item of solvedProblems) {
-        if (item.problem.contestId === props.cid && item.problem.index === props.idx) {
-            setProblemStatus(1);
-        }
-        console.log(item);
-    }
+    // for (const item of solvedProblems) {
+    //     if (item.problem.contestId === props.cid && item.problem.index === props.idx) {
+    //         setProblemStatus(1);
+    //     }
+    //     console.log(item);
+    // }
     
     return (
         <div>
