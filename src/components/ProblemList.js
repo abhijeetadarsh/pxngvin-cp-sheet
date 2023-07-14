@@ -3,7 +3,7 @@ import ProblemListData from '../data/ProblemListData.json';
 import ProblemItem from "./ProblemItem";
 import './ProblemList.css';
 
-export default function ProblemList() {
+export default function ProblemList(props) {
     return (
         <div className='container'>
             {ProblemListData.map((item) => (
@@ -15,7 +15,7 @@ export default function ProblemList() {
                         {item.question.map((questionItem) => (
                             <li className="list-group-item">
                                 <a href={questionItem.url} target="_blank">
-                                    <ProblemItem problem={questionItem} />
+                                    <ProblemItem problem={questionItem}/>
                                 </a>
                             </li>
                         ))}

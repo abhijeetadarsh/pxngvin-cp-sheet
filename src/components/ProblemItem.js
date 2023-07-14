@@ -13,8 +13,7 @@ export default function ProblemItem(props) {
                 <div>{props.problem.idx}. {props.problem.name}</div>
                 <div>{props.problem.rating}</div>
             </div>
-
-                <ProblemStatus/>
+                <ProblemStatus cid={props.problem.cid} idx={props.problem.idx}/>
         </div>
     );
 }

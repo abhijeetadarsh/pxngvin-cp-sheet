@@ -1,31 +1,31 @@
+import { useState } from 'react';
 import imgAttempted from '../images/thinking.png';
 import imgDone from '../images/verified.png';
 
-// const API_URL = "https://codeforces.com/api/problemset.problems";
 
+// function checkProblemExistence(solvedProblems, cid, idx) {
+
+//     return false; // Problem not found
+// }
+
+// let solvedProblems = [];
 export default function ProblemStatus(props) {
-    // const [problemsetData, setProblemsetData] = useState([]);
+    // 0 = unsolved , 1 = solved , 2 = attempted but not solved
+    const [problemStatus, setProblemStatus] = useState(0);
+    const [solvedProblems, setSolvedProblems] = useState([]);
 
-    // async function fetchProblemset(url) {
-    //     try {
-    //         const res = await fetch(url);
-    //         const data = await res.json();
-    //         // console.log(data);
-    //         setProblemsetData(data.result);
-    //     }
-    //     catch (e) {
-    //         console.error(e);
-    //     }
-    // }
 
-    // useEffect(() => {
-    //     fetchProblemset(API_URL);
-    // }, []);
-
+    for (const item of solvedProblems) {
+        if (item.problem.contestId === props.cid && item.problem.index === props.idx) {
+            setProblemStatus(1);
+        }
+        console.log(item);
+    }
+    
     return (
         <div>
-            <img className='status-image' src={imgDone} />
-            <img className='status-image' src={imgAttempted} />
+            {problemStatus === 1 && <img className='status-image' src={imgDone} />}
+            {problemStatus === 2 && <img className='status-image' src={imgAttempted} />}
         </div>
     );
 }
